@@ -1,1 +1,1 @@
-# ruby_mc69
+# ruby-blog
