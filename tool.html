@@ -13,10 +13,38 @@
       text-align: center;
     }
 
+    /* ===== MENU ===== */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: #0e0e0e;
+      padding: 12px 0;
+      box-shadow: 0 0 15px rgba(0,255,204,0.2);
+      z-index: 1000;
+    }
+
+    .navbar a {
+      margin: 0 12px;
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .navbar a:hover {
+      color: #ff004f;
+    }
+
     h1 {
       margin-top: 30px;
       color: #ff004f;
       text-shadow: 0 0 12px #ff004f;
+    }
+
+    .note {
+      color: #ff6666;
+      font-size: 13px;
+      margin-bottom: 10px;
     }
 
     .tool-list {
@@ -75,28 +103,39 @@
 
 <body>
 
+  <!-- MENU -->
+  <div class="navbar">
+    <a href="index.html">🏠 Home</a>
+    <a href="tool.html">🛠 Tool</a>
+    <a href="https://discord.gg/VjKCBZQtUn" target="_blank">💬 Discord</a>
+    <a href="https://youtube.com/@ruby_mc69" target="_blank">▶️ YouTube</a>
+  </div>
+
   <h1>🛠 TOOL & TIỆN ÍCH</h1>
+  <div class="note">⚠️ Tool chỉ dùng cho mục đích học tập & trải nghiệm cá nhân.</div>
 
   <div class="tool-list">
-    
+
+    <!-- CLIENT -->
     <div class="tool-card">
-  <h3>Vector Client</h3>
-  <p>Client PvP mạnh, tối ưu combat.</p>
-  <a href="https://link-vector-client" target="_blank">Tải</a>
-</div>
+      <h3>Vector Client</h3>
+      <p>Client PvP mạnh, tối ưu combat.</p>
+      <a href="https://link-vector-client" target="_blank">Tải</a>
+    </div>
 
-<div class="tool-card">
-  <h3>ProtoHax Client</h3>
-  <p>Client hack Minecraft PE phổ biến.</p>
-  <a href="https://link-protohax-client" target="_blank">Tải</a>
-</div>
+    <div class="tool-card">
+      <h3>ProtoHax Client</h3>
+      <p>Client Minecraft PE phổ biến.</p>
+      <a href="https://link-protohax-client" target="_blank">Tải</a>
+    </div>
 
-<div class="tool-card">
-  <h3>BMG Client</h3>
-  <p>Client PvP nhẹ, mượt.</p>
-  <a href="https://link-bmg-client" target="_blank">Tải</a>
-</div>
+    <div class="tool-card">
+      <h3>BMG Client</h3>
+      <p>Client PvP nhẹ, mượt.</p>
+      <a href="https://link-bmg-client" target="_blank">Tải</a>
+    </div>
 
+    <!-- TOOL KHÁC -->
     <div class="tool-card">
       <h3>Tool Minecraft</h3>
       <p>Hỗ trợ gameplay Minecraft.</p>
@@ -120,4 +159,4 @@
   <a class="back" href="index.html">⬅️ Quay lại trang chủ</a>
 
 </body>
-</html>
+  </html>
