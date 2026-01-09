@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Ruby_MC69 | Gaming Channel</title>
+
   <style>
     body {
       margin: 0;
@@ -34,27 +35,72 @@
       box-shadow: 0 0 20px rgba(255,0,79,0.25);
     }
 
-    .games span {
-      display: inline-block;
-      margin: 8px;
-      padding: 8px 16px;
-      border-radius: 20px;
-      background: #ff004f;
-      color: white;
-      font-weight: bold;
-      font-size: 14px;
+    /* ===== CARD GAME ===== */
+    .game-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
     }
 
-    .btn {
+    .game-card {
+      background: #141414;
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 0 20px rgba(0,255,204,0.15);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .game-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 25px rgba(255,0,79,0.6);
+    }
+
+    .game-card h3 {
+      margin: 10px 0;
+      color: #00ffcc;
+    }
+
+    .game-card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .game-card a {
       display: inline-block;
-      margin: 18px;
-      padding: 14px 30px;
-      background: #00ffcc;
-      color: black;
+      margin-top: 10px;
+      padding: 8px 18px;
+      background: #ff004f;
+      color: white;
+      border-radius: 20px;
       text-decoration: none;
-      border-radius: 30px;
       font-weight: bold;
-      box-shadow: 0 0 18px rgba(0,255,204,0.6);
+    }
+
+    /* ===== SOCIAL ===== */
+    .social-btn {
+      display: inline-block;
+      margin: 12px;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+
+    .youtube {
+      background: #ff0000;
+      box-shadow: 0 0 15px rgba(255,0,0,0.7);
+    }
+
+    .discord {
+      background: #5865F2;
+      box-shadow: 0 0 15px rgba(88,101,242,0.7);
+    }
+
+    .social-btn:hover {
+      opacity: 0.85;
     }
 
     footer {
@@ -62,32 +108,6 @@
       font-size: 12px;
       color: #777;
     }
-  </style>
-  <style>
-.social-btn {
-  display: inline-block;
-  margin: 12px;
-  padding: 14px 28px;
-  border-radius: 30px;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-}
-
-.youtube {
-  background: #ff0000;
-  box-shadow: 0 0 15px rgba(255,0,0,0.7);
-}
-
-.discord {
-  background: #5865F2;
-  box-shadow: 0 0 15px rgba(88,101,242,0.7);
-}
-
-.social-btn:hover {
-  opacity: 0.85;
-}
   </style>
 </head>
 
@@ -105,32 +125,43 @@
     </p>
   </div>
 
-  <div class="box games">
-    
-<a href="https://link-tải-game-cua-ban" target="_blank">
-  <button class="btn">Minecraft phiên bản mới nhất</button>
-</a>
+  <div class="box">
+    <h2>🔥 GAME & DOWNLOAD</h2>
 
-<h2>🛠 TOOL / CHEAT</h2>
-<a href="https://ruby-mc69.pages.dev" target="_blank">
-  <button class="btn">⬇️ Tải Tool</button>
-</a>
-<a href="https://link-tải-game-cua-ban" target="_blank">
-  <button class="btn">Roblox VNG</button>
-</a>
+    <div class="game-list">
+
+      <div class="game-card">
+        <h3>Minecraft</h3>
+        <p>Phiên bản mới nhất.</p>
+        <a href="https://link-tai-minecraft" target="_blank">Tải</a>
+      </div>
+
+      <div class="game-card">
+        <h3>Roblox VNG</h3>
+        <p>Game sáng tạo & giải trí.</p>
+        <a href="https://link-tai-roblox" target="_blank">Tải</a>
+      </div>
+
+      <div class="game-card">
+        <h3>Tool</h3>
+        <p>Công cụ hỗ trợ gameplay.</p>
+        <a href="https://link-tool-cua-ban" target="_blank">Xem</a>
+      </div>
+
+    </div>
   </div>
 
-<a class="social-btn youtube"
-   href="https://youtube.com/@ruby_mc69"
-   target="_blank">
-  ▶️ YOUTUBE
-</a>
+  <a class="social-btn youtube"
+     href="https://youtube.com/@ruby_mc69"
+     target="_blank">
+    ▶️ YOUTUBE
+  </a>
 
-<a class="social-btn discord"
-   href="https://discord.gg/VjKCBZQtUn"
-   target="_blank">
-  💬 DISCORD
-</a>
+  <a class="social-btn discord"
+     href="https://discord.gg/VjKCBZQtUn"
+     target="_blank">
+    💬 DISCORD
+  </a>
 
   <footer>
     © 2026 | Ruby_MC69
