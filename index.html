@@ -57,27 +57,26 @@
       box-shadow: 0 0 20px rgba(255,0,79,0.25);
     }
 
-    .games span {
-      display: inline-block;
-      margin: 8px;
-      padding: 8px 16px;
-      border-radius: 20px;
-      background: #ff004f;
-      color: white;
-      font-weight: bold;
-      font-size: 14px;
+    .media-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px;
     }
 
-    .btn {
-      display: inline-block;
-      margin: 18px;
-      padding: 14px 30px;
-      background: #00ffcc;
-      color: black;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      box-shadow: 0 0 18px rgba(0,255,204,0.6);
+    .media-section img {
+      width: 200px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,255,204,0.3);
+    }
+
+    .media-section iframe {
+      width: 360px;
+      height: 200px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255,0,79,0.3);
     }
 
     footer {
@@ -130,15 +129,20 @@
     <h2>🎮 Giới thiệu</h2>
     <p>
       Xin chào! Mình là <b>Ruby_MC</b>.  
-      Kênh chuyên gameplay, giải trí và trải nghiệm  
-      nhiều thể loại game khác nhau.
+      Kênh chuyên gameplay, giải trí và trải nghiệm nhiều thể loại game khác nhau.
     </p>
   </div>
 
-  <div class="box games">
-    <a class="btn" href="tool.html">🛠 Xem & Tải Tool</a>
-    <a class="btn" href="https://link-tải-game-cua-ban" target="_blank">🎮 Minecraft phiên bản mới nhất</a>
-    <a class="btn" href="https://link-tải-game-cua-ban" target="_blank">🎮 Roblox VNG</a>
+  <!-- PHẦN VIDEO + ẢNH -->
+  <div class="media-section">
+    <!-- Video YouTube -->
+    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+
+    <!-- Ảnh Roblox -->
+    <img src="LINK_ẢNH_ROBLOX" alt="Roblox">
+
+    <!-- Ảnh Minecraft -->
+    <img src="LINK_ẢNH_MINECRAFT" alt="Minecraft">
   </div>
 
   <a class="social-btn youtube"
@@ -158,4 +162,4 @@
   </footer>
 
 </body>
-  </html>
+</html>
